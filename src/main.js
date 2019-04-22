@@ -1,4 +1,4 @@
-import ms from 'ms';
+// import ms from 'ms';
 import lunchtime from './lunchtime.js';
 import millisecondsUntil from './millisecondsUntil.js';
 
@@ -8,5 +8,5 @@ export default function howLongUntilLunch(hours, minutes) {
 	if (minutes === undefined) minutes = 30;
 
 	var millisecondsUntilLunchTime = millisecondsUntil(lunchtime(hours, minutes));
-	return ms(millisecondsUntilLunchTime, { long: true });
+	return millisecondsUntilLunchTime; // ms(millisecondsUntilLunchTime, { long: true });
 }
